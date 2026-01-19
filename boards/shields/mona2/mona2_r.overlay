@@ -74,8 +74,22 @@
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
+            <&no_hscroll 1 1000>,                               //横スクロールだけ実質ゼロ化
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 7>;                           //スクロール量を1/5倍から1/7倍に変更
     };
 
+};
+
+/* 横スクロール（HWHEEL）だけを対象にする scaler を定義 */
+ / {
+    input_processors {
+        no_hscroll: no_hscroll {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_HWHEEL>;
+            /* track-remainders; は付けない */
+        };
+    };
 };
