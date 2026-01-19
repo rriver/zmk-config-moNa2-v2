@@ -103,7 +103,7 @@
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp GRAVE         &kp K_PREVIOUS      &kp K_PLAY_PAUSE  &kp K_NEXT                                     &kp LA(RIGHT_BRACKET)  &kp LS(LA(RIGHT_BRACKET))  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N0
+&kp ESCAPE  &kp GRAVE         &kp C_PREVIOUS      &kp C_PLAY_PAUSE  &kp C_NEXT                                     &kp LA(RIGHT_BRACKET)  &kp LS(LA(RIGHT_BRACKET))  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N0
 &kp TAB     &kp LA(TAB)       &kp LC(TAB)         &trans            &kp LC(UP_ARROW)            &trans             &kp LA(MINUS)          &mkp MB1                   &kp UP            &mkp MB2           &kp EQUAL
 &trans      &kp LG(LEFT_ALT)  &kp LA(LEFT_SHIFT)  &kp LEFT_ALT      &kp LC(DOWN)      &trans    &trans             &kp HOME               &kp LEFT                   &kp DOWN          &kp RIGHT          &kp END
 &trans      &trans            &trans              &trans            &trans            &trans    &kp LS(LG(SPACE))  &kp LA(SPACE)                                                                          &trans
