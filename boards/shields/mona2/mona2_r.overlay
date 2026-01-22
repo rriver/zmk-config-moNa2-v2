@@ -99,15 +99,13 @@
             #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
             codes = <INPUT_REL_HWHEEL>;
-            track-remainders;
         };
 
         no_vscroll: no_vscroll {
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_VWHEEL>;
-            track-remainders;
+            codes = <INPUT_REL_WHEEL>;
         };
     };
 };
