@@ -27,16 +27,19 @@
         layer4_ESC {
             bindings = <&lt 4 ESC>;
             key-positions = <1 0>;
+            timeout-ms = <25>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <21 22>;
+            timeout-ms = <30>;
         };
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <22 21>;
+            key-positions = <33 34>;
+            timeout-ms = <45>;
         };
     };
 
