@@ -74,3 +74,22 @@
     };
 
 };
+
+/* 横スクロール（HWHEEL）、縦スクロール（VWHEEL）だけを対象にする scaler を定義 */
+ / {
+    input_processors {
+        no_hscroll: no_hscroll {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_HWHEEL>;
+        };
+
+        no_vscroll: no_vscroll {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_WHEEL>;
+        };
+    };
+};
