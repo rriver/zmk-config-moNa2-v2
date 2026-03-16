@@ -80,7 +80,7 @@
         input-processors = 
                            <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
                            <&no_vscroll 1 1000>,                               //縦スクロールだけ実質ゼロ化
-                           <&zip_scroll_scaler 1 8>;                           //スクロール量を1/8倍に変更
+                           <&zip_scroll_scaler 1 10>;                          //スクロール量を1/10倍に変更
     };
 
 };
