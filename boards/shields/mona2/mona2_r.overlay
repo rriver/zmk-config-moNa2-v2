@@ -62,9 +62,6 @@
     status = "okay";
     device = <&trackball_central>;
 
-    input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
-                       <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
-
     /* レイヤー3：横スクロールを実質無効化（=縦のみ） */
     scroller {
         layers = <3>;
