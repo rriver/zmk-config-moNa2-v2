@@ -57,7 +57,7 @@
 };
 
 
-// Overrides for the input listener node
+// Overrides for the input listener 
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
@@ -67,7 +67,7 @@
 
     /* レイヤー3：横スクロールを実質無効化（=縦のみ） */
     scroller {
-        layers = <3>;
+        layers = <2>;
         input-processors = <&zip_xy_to_scroll_mapper>,                         // スクロールモードに変更
                            <&no_hscroll 1 1000>,                               // 横スクロールだけ実質ゼロ化
                            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   // スクロールのX軸反転
@@ -76,7 +76,7 @@
 
     /* レイヤー1：縦スクロールを実質無効化（=横のみ） */
     scroller_v {
-        layers = <1>;
+        layers = <3>;
         input-processors = 
                            <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
                            <&no_vscroll 1 1000>,                               //縦スクロールだけ実質ゼロ化
