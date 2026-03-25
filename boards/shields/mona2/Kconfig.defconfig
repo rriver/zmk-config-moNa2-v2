@@ -1,7 +1,7 @@
 if SHIELD_MONA2_R
 
 config ZMK_KEYBOARD_NAME
-    default "moNa2 Choco"
+    default "moNa2 choco"
 
 config ZMK_BLE
     default y
